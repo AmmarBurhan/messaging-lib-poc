@@ -1,0 +1,28 @@
+{
+  "name": "rabbitmq-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./build && tsc",
+    "docker:up": "sh ./src/shell-scripts/docker.sh",
+    "trace:on": "sh ./src/shell-scripts/trace.sh"
+  },
+  "author": "Ammar Burhan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/amqp-connection-manager": "^2.0.10",
+    "@types/amqplib": "^0.8.0",
+    "@types/uuid": "^8.3.0",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "amqp-connection-manager": "^3.2.2",
+    "amqplib": "^0.8.0",
+    "http-rabbitmq-manager": "0.0.4",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.0.0",
+    "uuid": "^8.3.2"
+  }
+}
