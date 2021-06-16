@@ -22,7 +22,9 @@ Below steps shows how to run producers (or publishers) and and consumers on diff
  - File names end with `AtNodex` to inform where the client exactly is connected. *Even though we have cluster setup a client (publisher or consumer) must connect to a certain node*.
 
 examples:
+
 `pAtNode1.js` --> producer running on node 1
+
 `cAtNode2.js` --> consumer running on node 2
 
 ## **Use cases**
